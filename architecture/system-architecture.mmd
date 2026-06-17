@@ -1,0 +1,17 @@
+flowchart LR
+
+Patients --> HealthcarePlatform
+HealthcarePlatform --> HealthcareDatabase
+
+HealthcareDatabase --> WorkflowAutomation
+WorkflowAutomation --> HealthcareAIEngine
+
+HealthcareAIEngine --> OperationalInsights
+OperationalInsights --> DecisionSupport
+
+HealthcareDatabase --> PostgreSQL
+WorkflowAutomation --> n8n
+WorkflowAutomation --> Make
+
+HealthcareAIEngine --> OpenAI
+HealthcareAIEngine --> Claude
