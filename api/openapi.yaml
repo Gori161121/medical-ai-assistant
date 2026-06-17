@@ -1,0 +1,46 @@
+openapi: 3.0.3
+
+info:
+  title: Medical AI Assistant API
+  description: API specification for healthcare operations, patient records and operational intelligence.
+  version: 1.0.0
+
+servers:
+  - url: https://api.medical-assistant.local
+
+paths:
+
+  /health:
+    get:
+      summary: Health Check
+      responses:
+        '200':
+          description: Service is running
+
+  /patients:
+    get:
+      summary: Get Patients
+      responses:
+        '200':
+          description: Patient list returned
+
+  /appointments:
+    get:
+      summary: Get Appointments
+      responses:
+        '200':
+          description: Appointment list returned
+
+  /operations/summary:
+    get:
+      summary: Healthcare Operations Summary
+      responses:
+        '200':
+          description: Operations summary returned
+
+  /medical/insights:
+    get:
+      summary: Medical Intelligence Summary
+      responses:
+        '200':
+          description: Medical insights returned
